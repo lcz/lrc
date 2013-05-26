@@ -20,6 +20,12 @@
     	
     	.v2{color:red;}
     	.v1{color:#000;}
+    	.lrc_hide > li{
+		display:none;
+		}
+	.lrc_show{
+		display:block;
+		}
     </style>
   </head>
   <body>
@@ -173,7 +179,7 @@ $   歌词进度拖动效果
     
     <Script>
     	
-    	lrc.build({object:'lrc_1',lrcUrl:'./lrcone.lrc',readType:'vls1'},{oneline:true});
+    	lrc.build({object:'lrc_1',lrcUrl:'./lrcone.lrc',readType:'vls1'},{oneline:true,height:'30px'});
     	
     </Script>
     
