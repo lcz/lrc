@@ -16,7 +16,11 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <style>
+    	
+    	.v2{color:red;}
+    	.v1{color:#000;}
+    </style>
   </head>
   <body>
       <div id="header">
@@ -42,6 +46,7 @@
 
         <h3>简介说明.</h3>
 <audio controls="" autoplay="" name="media"><source src="http://yecs.azone.artron.net/users_info/96/yecs/2009092021211283557.mp3" type="audio/mpeg"></audio>
+故乡的原风景
 <p>在之前的版本上做了扩展，使其更加易用，代码量减少到了一行，并且文件大小只有 7K。 同时我们提供定制版服务，欢迎咨询！</p>
 
 <h3>更新内容 <sub>2013-5-26</sub></h3>
@@ -112,15 +117,15 @@ $   歌词进度拖动效果
   
   
   歌词特殊标识：<br>
-  		sname :"ti",  //歌曲名
-         	cname :"cl",  //作词
-         	qname :"cs",  //作曲
-         	bname :"ps",   //编曲
-         	sgname :"ar",    //歌手名称
-         	special :"al",   //所属专辑
-         	kname :"by",		//歌词制作
-         	end :"end"    //结束 语
-	   用户可以手动修改   如：lrc.tag.sname='title';
+	 sname :"ti",  //歌曲名
+	 cname :"cl",  //作词
+	 qname :"cs",  //作曲
+	 bname :"ps",   //编曲
+	 sgname :"ar",    //歌手名称
+	 special :"al",   //所属专辑
+	 kname :"by",		//歌词制作
+	 end :"end"    //结束 语
+	用户可以手动修改   如：lrc.tag.sname='title';
     
      </code>
 </pre>
@@ -128,8 +133,21 @@ $   歌词进度拖动效果
  
 <h2>掩饰</h2>
 <p>
+<blockquote contenteditable="true">                      
+中国味道:
+<audio controls="" autoplay="" name="media">
+	<source src="http://www.coolthktv.com/upload/attachment/20121026/10.mp3" type="audio/mpeg">
+</audio>	
+
+</blockquote>
+
+<div id="lrc_1">
 	
 	
+</div>
+
+
+
 	
 </p>
 
@@ -152,6 +170,12 @@ $   歌词进度拖动效果
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+    <Script>
+    	
+    	lrc.build({object:'lrc_1',lrcUrl:'lrcone.lrc',readType:'vls1'},{oneline:true});
+    	
+    </Script>
     
   </body>
 </html>
