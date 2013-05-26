@@ -140,7 +140,7 @@ $   歌词进度拖动效果
 <h2>掩饰</h2>
 <p>
 <blockquote contenteditable="true">                      
-中国味道:
+中国味道:(单行显示)
 <audio controls="" autoplay="" name="media">
 	<source src="http://www.coolthktv.com/upload/attachment/20121026/10.mp3" type="audio/mpeg">
 </audio>	
@@ -152,7 +152,20 @@ $   歌词进度拖动效果
 	
 </div>
 
+<!-- 多行显示 -->
 
+<blockquote contenteditable="true">                      
+中国味道:(多行显示)
+<audio controls="" autoplay="" name="media">
+	<source src="http://www.coolthktv.com/upload/attachment/20121026/10.mp3" type="audio/mpeg">
+</audio>	
+
+</blockquote>
+
+<div id="lrc_1">
+	
+	
+</div>
 
 	
 </p>
@@ -180,6 +193,8 @@ $   歌词进度拖动效果
     <Script>
     	
     	lrc.build({object:'lrc_1',lrcUrl:'./lrcone.lrc',readType:'vls1',open:true},{oneline:true,height:'30px'});
+    	
+    	lrc.build({object:'lrc_2',lrcUrl:'./lrcone.lrc',readType:'vls1',open:true},{oneline:false,height:'30px'});
     	
     </Script>
     
