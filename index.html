@@ -22,6 +22,7 @@
       <div id="header">
         <nav>
           <li class="fork"><a href="https://github.com/lcz/lrc">View On GitHub</a></li>
+          <li><audio src='http://pan.baidu.com/share/link?shareid=453861&uk=70585157'></audio></li>
           <li class="downloads"><a href="https://github.com/lcz/lrc/zipball/master">ZIP</a></li>
           <li class="downloads"><a href="https://github.com/lcz/lrc/tarball/master">TAR</a></li>
           <li class="title">DOWNLOADS</li>
@@ -65,42 +66,42 @@ $   歌词进度拖动效果
 
 <p>
   基本：一行代码搞定：<br>
-  
+  <pre>
   <code>
     lrc.build(参数一,参数二);
     <p>
       <h3>参数一：</h3>
-          ‘object’      页面内显示元素位置    id 属性
-  				‘initTop’     歌词头初始位置
-					‘center’      焦点位置
-					‘empty’       构建头与尾部 的 空对象原始  
-					‘isDropLrc’   启用歌词拖入，仅支持现代浏览器，  默认（true） 
-					'lrcUrl'      歌词文件路径 ， 用 html5 Worker  对象读取的。
-					'lrcText'     歌词文本    string
-					
-					'readType' ：  歌词解析方式  Read:弱一点，但是它快(默认)  ,vls1:功能类似悍马车一样，但开销贵一点
-					’seekMark‘ ：  追踪方式   Value：慢一点 ， ValueInd：快一点
-					
-					’syntony‘   ： 歌词解析完毕后的 回调函数 function
-					
-					'media'：      播放器对象  默认支持  audio  video，   id 属性
-					
-					'open':        显示开启  默认：False
+        ‘object’      页面内显示元素位置    id 属性
+  	‘initTop’     歌词头初始位置
+	‘center’      焦点位置
+	‘empty’       构建头与尾部 的 空对象原始  
+	‘isDropLrc’   启用歌词拖入，仅支持现代浏览器，  默认（true） 
+	'lrcUrl'      歌词文件路径 ， 用 html5 Worker  对象读取的。
+	'lrcText'     歌词文本    string
+	
+	'readType' ：  歌词解析方式  Read:弱一点，但是它快(默认)  ,vls1:功能类似悍马车一样，但开销贵一点
+	’seekMark‘ ：  追踪方式   Value：慢一点 ， ValueInd：快一点
+	
+	’syntony‘   ： 歌词解析完毕后的 回调函数 function
+	
+	'media'：      播放器对象  默认支持  audio  video，   id 属性
+	
+	'open':        显示开启  默认：False
     </p>
     
     <p>
       <h3>参数二：</h3>
-          'notoccupy'    // 
-  			  'occupy'      正在被播放中的歌词 加亮样式    .class
-					'width' ：    宽度    如： 50px , 90%
-					'height' ：   高度    如： 50px , 90%
-					
-					'align':      水平居中方式  默认：center
-					'oneline'  ： 单行显示      默认：false
+        'notoccupy'    // 普通样式	.class
+	'occupy'      正在被播放中的歌词 加亮样式    .class
+	'width' ：    宽度    如： 50px , 90%
+	'height' ：   高度    如： 50px , 90%
+	
+	'align':      水平居中方式  默认：center
+	'oneline'  ： 单行显示      默认：false
 
     </p>
   </code>
-
+<pre>
 
   手动歌词到指定时间：<br>
   lrc.setProgress(歌词对象, 时间);
@@ -123,6 +124,12 @@ $   歌词进度拖动效果
 	   用户可以手动修改   如：lrc.tag.sname='title';
     
     
+</p>
+<h2>掩饰</h2>
+<p>
+	
+	
+	
 </p>
 
 
