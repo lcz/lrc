@@ -554,7 +554,8 @@ if (xmlhttp!=null)
 					{
 					
 					lrct=xmlhttp.responseText;
-					 lrct = lrct.replace(/<\/?.+?>/g,"").replace(/[\r\n]/g, ""); 
+					 lrct = lrct.replace(/<\/?.+?>/g,"").replace(/[\r\n]/g, "")+"";
+					 alert(lrct);
     	 
 					}
 				  else
